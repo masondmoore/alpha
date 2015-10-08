@@ -2,6 +2,24 @@
 <html class="no-js" lang="">
     <head>
 	<style>
+	.container {
+		max-width: 980px;
+		margin: 0 auto;
+		position: relative;
+	}
+.container:before,
+.container:after {
+    content: "";
+    display: table;
+}
+.container:after {
+    clear: both;
+}
+.container {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+	body {margin: 0;}
 	#header{
 	background-color:black;
 	color:grey;
@@ -9,25 +27,37 @@
 	padding: 10px;
 	}
 	#body{
-	background-color:grey;
-	color:black;
-	text-align:right;
-	padding: 25px;
-	float: left-side;
-	width:800px;
-	padding:50px;
-	
+		background-color:grey;
+		color:black;
+		text-align:right;
+		padding: 25px 0;
+		float: left;
+		width: 100%;
 	}
 	#picture{
-	float:right;
-	margin:25px;
-	
+		float:left;
+		margin:25px;
 	}
 	
-	#button{
-	float:right;
-	margin:40px;}
-	
+	#button {
+		margin: 40px 0;
+		text-align: center;
+		padding: 50px 0;
+		clear: both;
+		width: 100%;
+	}
+	a.btn {
+		padding: 15px;
+		margin: 20px;
+		background-color: #eee;
+		text-decoration: none;
+		border-radius: 5px;
+		color: #000;
+	}
+		a.btn:hover {
+			background-color: #000;
+			color: #eee;
+		}
 	img{
 		postion: absolute;
 		left:0;
@@ -44,41 +74,44 @@
 			text-align: center;
 			}
 	p {
-		text-align: right;
-		
+		text-align: left;
+		float: left;
+		width: 50%;
+		padding-left: 70px;
 		}
 		.twitter{
-			background:url(users/imamoore/appdata/local/temp/thumbs-up-revised-4/09.15/thumbsup-small.png) no-repeat #eee;
-			}
+			background:url(/images/thumbsup-small.png) no-repeat #eee;
+		}
 	</style>
         
     </head>
     <body>
-	<div id="header">
-		<h2><b>Mason Moore</b></h2>
+		<div class="container">
+		<div id="header">
+			<h2><b>Mason Moore</b></h2>
 		</div>
-		<div id="body">
-		<h3>Life of Mas</h3>
-		
-		<p>Hello my name is Mason Moore. I am from Chelsea Alabama. I graduated form 
-		Chelsea High School. I have a lot of hobbies but my main ones are playing video games, 
-		longboarding, playing any sport, hiking, rock climbing, and dancing. I played high school 
-		football, baseball, and basketball. I loved all three of these sports but I had to chose one 
-		to stick with my Junior and Senior year so I chose football. When I was in high school I really
-		had no idea where I wanted to go to College. Highlands College was actually not even on the radar.
-		I was looking more towards Jeff State and then transfering to Alabama. When I was starting 
-		to apply for college's I had a friend who goes to Highlands College tell me to check it out. 
-		When I looked into it, I felt God calling me to Highlands College. It just felt like home. </p>
+			<div id="body">
+				<h3>Life of Mas</h3>
+				<p>Hello my name is Mason Moore. I am from Chelsea Alabama. I graduated form 
+				Chelsea High School. I have a lot of hobbies but my main ones are playing video games, 
+				long boarding, playing any sport, hiking, rock climbing, and dancing. I played high school 
+				football, baseball, and basketball. I loved all three of these sports but I had to chose one 
+				to stick with my Junior and Senior year so I chose football. When I was in high school I really
+				had no idea where I wanted to go to College. Highlands College was actually not even on the radar.
+				I was looking more towards Jeff State and then transferring to Alabama. When I was starting 
+				to apply for college's I had a friend who goes to Highlands College tell me to check it out. 
+				When I looked into it, I felt God calling me to Highlands College. It just felt like home. </p>
+				<div id="picture">
+					<img src="http://media.al.com/alphotos/photo/2014/09/26/-00c0069bbebeb845.jpg" width="300px" height="300px"/>
+				</div>
+			</div>
+			<div id="button">
+				<a class="btn instagram" href="http://instagram.com">Connect to Instagram</a>
+				<a class="btn facebook" href="http://facebook.com">Connect to Facebook</a>
+				<a class="btn twitter" href="http://twitter.com">Connect on Twitter</a>
+			</div>
 		</div>
-		<div id="picture">
-		<img src="http://media.al.com/alphotos/photo/2014/09/26/-00c0069bbebeb845.jpg" width="300px" height="300px"/>
-		</div>
-		<div id="button">
-		<a class="btn instagram" href="http://instagram.com">Connect to Instagram</a>
-		<a class="btn facebook" href="http://facebook.com">Connect to Facebook</a>
-		<a class="btn twitter" href="http://twitter.com">Connect on Twitter</a>
-		</div>
-    </body>
+</body>
 	
 	
 </html>
