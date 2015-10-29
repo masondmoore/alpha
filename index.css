@@ -1,0 +1,41 @@
+.container{
+	max-width: 980px;
+	margin: 0 auto;
+	background: url(images/background2.jpg);
+
+}
+.body{
+	margin:250px
+}
+.bot{
+	position: absolute;
+	top: 650px;
+	left: 700px;
+	margin-left: -100px;
+	margin-right: 125px;
+	}
+
+h2{
+	color: #e36f1e;
+	font-family: helvetica;
+}
+h3{
+	color: #4786a5;
+	margin: 0 0 0 135px;
+
+}
+body{
+	background: url(images/background1.jpg) no-repeat;
+	
+}
+
+img{
+	position: absolute;
+    top: 550px;
+	background: url(images/background2.jpg);
+}
+
+.p{
+	font-family: georgia;
+	color: #4d5961;
+}
