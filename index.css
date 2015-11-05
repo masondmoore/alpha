@@ -5,7 +5,10 @@
 
 }
 .body{
-	margin:250px
+	margin:250px;
+	padding: 50px 0;
+	text-align:center;
+	
 }
 .bot{
 	position: absolute;
@@ -17,7 +20,7 @@
 
 h2{
 	color: #e36f1e;
-	font-family: helvetica;
+	font-family: Sans-serif;
 }
 h3{
 	color: #4786a5;
@@ -38,4 +41,17 @@ img{
 .p{
 	font-family: georgia;
 	color: #4d5961;
+}
+
+.button{
+	position:absolute;
+	top: 1000px;
+	right: 500px;
+	background-color: #4786a5;
+	border: 3px solid white;
+	padding: 15px;
+	color: #4786a5;
+}
+footer{
+	background: url(images/background2.jpg);
 }
